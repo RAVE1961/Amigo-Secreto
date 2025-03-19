@@ -1,0 +1,99 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap');
+
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-scouter: #D61E5B;
+    --color-hover: #494646;
+    --color-nombre:#e9da0b;
+    --fuente-tektur: "Tektur", sans-serif;
+    --fuente-kanit: 'kanit', sans-serif;
+}
+
+* {
+    padding: 0%;
+    margin:0;
+}
+
+body {
+    background: linear-gradient(#0D208C 20%, #0B7ABF 40%, #A69B03 70%);
+    box-sizing: content-box;
+    height: 115vh;
+}
+
+.imagen__ilustrativa{
+        max-width: 50%;
+        max-height: 50%;
+        border-radius: 0;
+        border: 0.5rem solid transparent; 
+        border-image: linear-gradient(#0D208C 20%, #0B7ABF 40%, #A69B03 70%) 1;
+}
+
+.Contenido{
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: column;
+}
+
+.titulo__texto{
+    font-family: var(--fuente-tektur);
+    font-size: 2rem;
+    color: var(--color-terciaria);
+    text-align:  center;
+}
+
+.texto__instrucciones{
+    font-family: var(--fuente-kanit);
+    font-size: 1.5rem;
+    color: var(--color-terciaria);
+    text-align:  center;
+    
+}
+
+
+.input__box{
+    font-family: var(--fuente-tektur);
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: var(--color-scouter);
+    color: var(--color-nombre);
+    display: flex;
+    margin: 0.5%;
+    gap:40px;
+    border-radius: 2rem ;
+    border: none;
+}
+
+
+
+.container__boton{
+    font-family: var(--fuente-kanit);
+    font-size: 1rem;
+    color: var(--color-secundario);
+    background-color: var(--color-hover);
+    border: var(--color-primario);
+    border-radius: 1rem;
+    padding: 0.5rem; 
+    margin: 0.5rem;
+}
+
+.imagen__ilustrativa{
+    display: flex;
+}
+
+/*display: flex;
+justify-content: center;
+align-items: column;
+font-family: var(--fuente-kanit);
+color: var(--color-secundario);
+background-color: var(--color-hover);
+border: var(--color-primario);
+border-radius: 1rem;
+padding: 5%;
+margin: 5%;
+gap:40px
