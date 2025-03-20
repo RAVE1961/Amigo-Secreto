@@ -12,8 +12,17 @@
     <header>
         
     </header>
- 
+
     <main class="Contenido">
+      <div>
+        <audio id="miAudio">
+            <source src="./assets/Cell.mp3" type="audio/mpeg">
+        </audio>
+         <audio id="Scouter">
+            <source src="./assets/Scouter.mp3" type="audio/mpeg">
+        </audio>
+        
+      </div>
      <img class="imagen__ilustrativa" src="./assets/vegeta1.jpg" alt="Imagen de Vegeta">
             <div class="contenido__informacion">
                 <h1 class="titulo__texto ">Veamos quien será el siguiente luchador</h1>
@@ -23,11 +32,11 @@
          </div> 
              <input type="text" value=""  id="NombreUsuario"  Class="input__box" ="agregarNombre()">
               <div class="Boton">
-                <button onclick="agregarNombre();" class="container__boton">Ingresa el Nombre</button>
-                <button onclick="sortearNombre();" class="container__boton">Sortear</button>
+                <button onclick="agregarNombre(); document.getElementById('miAudio').play()" class="container__boton">Ingresa el Nombre</button>
+                <button onclick="sortearNombre(); document.getElementById('Scouter').play(); document.getElementById('miAudio').pause()" class="container__boton">Sortear</button>
                 <button onclick="condicionesIniciales();" class="container__boton" id="reiniciar">Nuevo Sorteo</button>
                 </div>
-
+                
     <script src="app.js"></script>
 </main>
 </body>

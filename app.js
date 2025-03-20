@@ -54,6 +54,13 @@ function reiniciarLista() {
     listaNombresSorteados.length = 0;
 }
 
+// Función para solicitar nombres al usuario
+/*function solicitarNombres() {
+    let nombre;
+    while ((nombre = prompt("Ingresa un nombre (o deja vacío para terminar):"))) {
+        agregarNombre(nombre);
+    }
+}*/
 
 function iniciarSorteo() {
     if (listaNombresSorteados.length === 0) {
@@ -63,4 +70,6 @@ function iniciarSorteo() {
     alert(`El nombre sorteado es: ${sortearNombre()}`);
 }
 
-condicionesIniciales()
+/*
+solicitarNombres();
+iniciarSorteo();*/condicionesIniciales()
